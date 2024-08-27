@@ -1,23 +1,34 @@
 // Model
-const model = {
-  data: [],
-  // Add your model methods here
-};
+class Model {
+  constructor() {
+    // Initialize model data here
+  }
+
+  // Define model methods here
+}
 
 // View
-const view = {
-  // Add your view methods here
-};
+class View {
+  constructor() {
+    // Initialize view elements here
+  }
+
+  // Define view methods here
+}
 
 // Controller
+class Controller {
+  constructor(model, view) {
+    this.model = model;
+    this.view = view;
 
-const controller = {
-  init() {
-    // Initialize the controller
-    // Add event listeners and other setup code here
-  },
-  // Add your controller methods here
-};
+    // Bind controller methods to view events here
+  }
 
-// Initialize the controller
-controller.init();
+  // Define controller methods here
+}
+
+// Create instances of model, view, and controller
+const model = new Model();
+const view = new View();
+const controller = new Controller(model, view);
